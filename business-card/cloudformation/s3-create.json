@@ -1,0 +1,26 @@
+{
+    "AWSTemplateFormatVersion" : "2010-09-09",
+
+    "Description" : "Create a private bucket",
+
+    "Resources": {
+  
+      "profile-photo-bucket": {
+        "Type": "AWS::S3::Bucket",
+        "DeletionPolicy": "Retain",
+        "Properties": {
+            "AccessControl": "Private",
+            },
+  
+        },
+  
+    },
+    "Outputs": {
+        "BucketName": {
+            "Value": {
+                "Ref": "profile-photo-bucket"
+            },
+            "Description": "Objects in this bucket are profile photos for the business card web app."
+        }
+    }
+}
