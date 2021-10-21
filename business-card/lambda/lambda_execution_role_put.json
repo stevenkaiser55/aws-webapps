@@ -14,7 +14,7 @@
       "Action": [
         "dynamodb:PutItem"
       ],
-      "Resource": "arn:aws:dynamodb:us-east-2:123456789012:table/Contact"
+      "Resource": "arn:aws:dynamodb:us-west-2:966048447502:table/webapps-business-card"
     }
   ]
 }
