@@ -5,7 +5,7 @@
 
     "Resources": {
   
-      "profile-photo-bucket": {
+      "profilephoto": {
         "Type": "AWS::S3::Bucket",
         "DeletionPolicy": "Retain",
         "Properties": {
@@ -18,7 +18,7 @@
     "Outputs": {
         "BucketName": {
             "Value": {
-                "Ref": "profile-photo-bucket"
+                "Ref": "profilephoto"
             },
             "Description": "Objects in this bucket are profile photos for the business card web app."
         }

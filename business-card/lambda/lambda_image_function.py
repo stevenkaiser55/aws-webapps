@@ -7,7 +7,7 @@ exports.handler = (event, context, callback) => {
      var filePath = "profile_photo/" + event.queryStringParameters.name + ".jpg"
      var params = {
        "Body": decodedImage,
-       "Bucket": "cfs3-webapps-business-card-profile-photo-bucket",
+       "Bucket": "cfs3-webapps-business-card-profilephoto-qlzhysz7y6mb",
        "Key": filePath  
     };
     s3.upload(params, function(err, data){
